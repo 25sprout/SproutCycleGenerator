@@ -1,0 +1,64 @@
+import android.os.Bundle;
+import android.view.View;
+import android.app.Fragment;
+import android.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import com.sprout.sproutlib.SproutFragmentCycle;
+${IMPORTS}
+
+abstract public class ${CLASS_NAME} extends Fragment implements SproutFragmentCycle ${INTERFACES} {
+
+    ${FIELDS}
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        findViews(view);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        if(getActivity() instanceof AppCompatActivity){
+            setupActionBar(((AppCompatActivity) getActivity()).getSupportActionBar());
+        }else{
+            setupActionBar(getActivity().getActionBar());
+        }
+
+        init();
+        handleSavedInstanceState(savedInstanceState);
+        onSetup();
+        loadOnActivityCreated();
+
+        ${ASSIGNMENTS}
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        loadOnStart();
+    }
+
+    @Override
+    public void setupActionBar(ActionBar actionBar) {
+
+    }
+
+    @Override
+    public void setupActionBar(android.support.v7.app.ActionBar actionBar) {
+
+    }
+
+    @Override
+    public void loadOnActivityCreated() {
+
+    }
+
+    @Override
+    public void loadOnStart() {
+
+    }
+
+    ${METHODS}
+}

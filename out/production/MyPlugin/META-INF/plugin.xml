@@ -1,0 +1,56 @@
+<idea-plugin version="2">
+    <id>sprout.cycle.plugin</id>
+    <name>SproutCycle</name>
+    <version>1.0</version>
+    <vendor email="awonwon@25sprout.com" url="http://www.25sprout.com">25sprout</vendor>
+
+    <description><![CDATA[
+     Create SproutCycle's Base Component Automatically.<br>
+     This plugin helps you to create.
+    ]]></description>
+
+    <!--<change-notes><![CDATA[-->
+    <!--Add change notes here.<br>-->
+    <!--<em>most HTML tags may be used</em>-->
+    <!--]]>-->
+    <!--</change-notes>-->
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectService serviceInterface="sprout.baselib.plugin.setting.Settings"
+                        serviceImplementation="sprout.baselib.plugin.setting.Settings"/>
+        <applicationService
+                serviceInterface="sprout.baselib.plugin.setting.TemplateSettings"
+                serviceImplementation="sprout.baselib.plugin.setting.TemplateSettings"/>
+    <applicationConfigurable
+            instance="sprout.baselib.plugin.setting.MainConfigurable"/>
+    </extensions>
+
+
+    <actions>
+        <group id="AwonPlugin.SproutBase" text="_Sprout Base" description="Sprout Base">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+        </group>
+            <action id="BaseActivity" class="sprout.baselib.plugin.CreateBaseActivityAction" text="Create Activity"
+                    icon="/icons/logo_activity.png">
+                <add-to-group group-id="AwonPlugin.SproutBase" anchor="first"/>
+            </action>
+
+            <action id="BaseFragment" class="sprout.baselib.plugin.CreateBaseFragmentAction" text="Create Fragment"
+                    icon="/icons/logo_fragment.png">
+                <add-to-group group-id="AwonPlugin.SproutBase" anchor="last"/>
+            </action>
+
+
+    </actions>
+
+</idea-plugin>

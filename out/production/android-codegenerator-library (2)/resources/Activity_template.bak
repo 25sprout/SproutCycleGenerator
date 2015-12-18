@@ -1,0 +1,20 @@
+import android.os.Bundle;
+import android.app.Activity;
+import
+${IMPORTS}
+
+public class ${CLASS_NAME} extends Activity ${INTERFACES} {
+
+    ${FIELDS}
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        ${ASSIGNMENTS}
+
+        // hello, i'm test.
+    }
+
+    ${METHODS}
+}

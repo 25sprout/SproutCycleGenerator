@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SproutCycleGenerator/SproutCycleGenerator.iml" filepath="$PROJECT_DIR$/SproutCycleGenerator/SproutCycleGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-codegenerator-library-master/android-codegenerator-library.iml" filepath="$PROJECT_DIR$/android-codegenerator-library-master/android-codegenerator-library.iml" />
+    </modules>
+  </component>
+</project>
