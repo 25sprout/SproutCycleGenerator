@@ -239,10 +239,9 @@ private void generateFile(String path, String fileName) throws IOException {
 <br>
 -----
 ### Reference
-[IntelliJ Platform SDK DevGuide](http://www.jetbrains.org/intellij/sdk/docs/basics/persisting_state_of_components.html)
-[IntelliJ IDEA插件开发手册](http://www.360doc.com/content/14/1107/13/16650130_423318501.shtml)
-[Intellij IDEA插件开发入门 ](http://blog.csdn.net/dc_726/article/details/14139155)
-
+* [IntelliJ Platform SDK DevGuide](http://www.jetbrains.org/intellij/sdk/docs/basics/persisting_state_of_components.html)
+* [IntelliJ IDEA插件开发手册](http://www.360doc.com/content/14/1107/13/16650130_423318501.shtml)
+* [Intellij IDEA插件开发入门 ](http://blog.csdn.net/dc_726/article/details/14139155)
 
 
 
