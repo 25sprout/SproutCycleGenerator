@@ -5,7 +5,7 @@
 ![alt_text](http://www.25sprout.com/images/logo_max.png)
 
 An inteliJ Plugin about creating [SproutCycle](https://25sprout.gitbooks.io/25sprout-appdept-devbook/content/sproutcycle.html) base class. (It can install on Android Studio,too)
-
+ 
 這是一個專門建立 SproutCycle 所需 BaseClass 的 inteliJ 套件（也可以使用在 Android Studio 上）。
 
 
@@ -133,15 +133,19 @@ public class CreateFirstAction extends AnAction {
 <br>
 ####d. Debug Plugin
 首先在 Run Configurations 新增一個 Plugin
+
 ![Alt text](https://github.com/25sprout/SproutCycleGenerator/blob/master/images/.1451039456523.png)
 
 並在 `Use classpath of module` 中選擇你建立的 Plugin
+
 ![Alt text](https://github.com/25sprout/SproutCycleGenerator/blob/master/images/.1451039517713.png)
 
 執行你剛剛所建立的 Run Config
+
 ![Alt text](https://github.com/25sprout/SproutCycleGenerator/blob/master/images/.1451039610809.png)
 
 最後會開啟一個新的 InteliJ 程式，你可以開一個新的 Project 測試你的 Plugin 功能，這個 Project 是會實際保存的狀態的，會存在你的 'IDEA Project` 當中
+
 ![Alt text](https://github.com/25sprout/SproutCycleGenerator/blob/master/images/.1451039741566.png)
 
 
