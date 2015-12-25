@@ -230,7 +230,7 @@ private void generateFile(String path, String fileName) throws IOException {
     //set file content
     projectHelper.setFileContent(project, createdFile, generatedCode);
 
-  //refresh
+    //refresh
     VirtualFile vf = LocalFileSystem.getInstance().findFileByIoFile(new File(path));
     vf.refresh(true, false);
 }
