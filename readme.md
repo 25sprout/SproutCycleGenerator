@@ -32,7 +32,7 @@ An inteliJ Plugin about creating [SproutCycle](https://25sprout.gitbooks.io/25sp
 
 <br>
 
-4. 點下 Create 就會在 Package 中產生 base 資料夾與相關 Class
+ 4.點下 Create 就會在 Package 中產生 base 資料夾與相關 Class
 
 
 -----
@@ -84,9 +84,9 @@ An inteliJ Plugin about creating [SproutCycle](https://25sprout.gitbooks.io/25sp
 ####b. Project Directory Introduction
 ![Alt text](https://github.com/25sprout/SproutCycleGenerator/blob/master/images/.1450949464414.png)
 
-Plugin Project 的目錄主要兩個
-1. `META_INF/plugin.iml` ： Plugin 設定檔，如基本資訊、開發更新 Log、各種 Action 與 Service 等等的元件定義
-2. `src` ： 放置元件的資料夾，如：Action、Service、Swing介面或 icon 圖檔
+Plugin Project 的目錄主要兩個：<br>
+1.`META_INF/plugin.iml` ： Plugin 設定檔，如基本資訊、開發更新 Log、各種 Action 與 Service 等等的元件定義<br>
+2.`src` ： 放置元件的資料夾，如：Action、Service、Swing介面或 icon 圖檔
 
 <br><br>
 ####c. Create First Action
