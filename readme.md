@@ -236,6 +236,10 @@ private void generateFile(String path, String fileName) throws IOException {
 }
 ```
 
+### Export Plugin
+
+`Build`->`prepare plugin module for Deployment`
+可以參考此篇 [InteliJ Deploy Plugin](http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/deploying_plugin.html
 
 
 
